@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-11-14 10:29",
+  "lots": [],
+  "lot_count": 0,
+  "totals": {
+    "cost": 0.0,
+    "value": 0.0,
+    "unrealised": 0.0,
+    "short": 0.0,
+    "long": 0.0
+  },
+  "realised": {
+    "short_term": -725.27,
+    "long_term": 0.0,
+    "total": -725.27,
+    "count": 1,
+    "rows": [
+      {
+        "symbol": "INFY.NS",
+        "display": "INFY",
+        "qty": 109,
+        "entry": 1142.2,
+        "exit": 1136.38,
+        "entry_at": "2026-11-13 13:27",
+        "exit_at": "2026-11-13 14:25",
+        "reason": "stop-loss hit on the 14:25 bar",
+        "gross": -634.38,
+        "charges": 90.89,
+        "net": -725.27,
+        "planned_stop": null,
+        "planned_risk": null,
+        "term": "short"
+      }
+    ]
+  },
+  "long_term_months": 12,
+  "note": "Not tax advice, and no tax rate is named anywhere here. For Indian listed equity the long-term line is 12 months; what that costs you is for a tax professional. Lots are rebuilt from the paper account's own fills."
+}

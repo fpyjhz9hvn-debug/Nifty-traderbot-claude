@@ -1,0 +1,63 @@
+{
+  "orders": [
+    {
+      "id": "PO-F60BBFAE5F",
+      "date": "2026-11-13",
+      "at": "2026-11-13 13:27",
+      "fingerprint": "d25b80926e6652ec",
+      "kind": "entry",
+      "symbol": "INFY.NS",
+      "display": "INFY",
+      "side": "buy",
+      "qty": 109,
+      "type": "market",
+      "fill_price": 1142.2,
+      "quote_time": "2026-11-13 13:26:52",
+      "status": "placed",
+      "stop": 1136.38,
+      "target": 1153.54,
+      "max_loss": 623.48,
+      "charges": 31.84,
+      "account": "PAPER"
+    },
+    {
+      "id": "PX-1B4E43D808",
+      "date": "2026-11-13",
+      "at": "2026-11-13 14:25",
+      "fingerprint": "auto-stop",
+      "kind": "exit",
+      "symbol": "INFY.NS",
+      "display": "INFY",
+      "side": "sell",
+      "qty": 109,
+      "type": "market",
+      "fill_price": 1136.38,
+      "status": "placed",
+      "realised": -693.43,
+      "account": "PAPER",
+      "note": "bracket stop"
+    }
+  ],
+  "approvals": [
+    {
+      "date": "2026-11-13",
+      "at": "2026-11-13 13:25",
+      "index": 1,
+      "fingerprint": "4f3d082784a24cfe",
+      "reply": "yes",
+      "symbol": "INFY.NS",
+      "qty": 108,
+      "side": "buy"
+    },
+    {
+      "date": "2026-11-13",
+      "at": "2026-11-13 13:26",
+      "index": 1,
+      "fingerprint": "d25b80926e6652ec",
+      "reply": "yes",
+      "symbol": "INFY.NS",
+      "qty": 109,
+      "side": "buy"
+    }
+  ]
+}

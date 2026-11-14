@@ -1,0 +1,498 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NIFTY Day Trader</title>
+<link rel="stylesheet" href="/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%93%88%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">&#9670;</span>
+    <div>
+      <h1>NIFTY Day Trader</h1>
+      <p class="sub">the day-trader skill chain, on NSE, on a paper account</p>
+    </div>
+  </div>
+  <div class="topstats" id="topstats"></div>
+  <div class="topright">
+    <span class="paper-badge" title="There is no brokerage account and no real money anywhere in this app.">PAPER &middot; SIMULATED</span>
+    <button class="ghost" id="refreshBtn" title="Refresh everything">&#8635;</button>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button class="tab active" data-tab="dashboard">Dashboard</button>
+  <button class="tab" data-tab="scanner">1 &middot; Scanner</button>
+  <button class="tab" data-tab="movers">Movers</button>
+  <button class="tab" data-tab="feed">News <span id="feedBadge" class="badge hidden"></span></button>
+  <button class="tab" data-tab="invest">Invest</button>
+  <button class="tab" data-tab="discipline">Regime &amp; edge</button>
+  <button class="tab" data-tab="trade">2&ndash;8 &middot; Trade desk</button>
+  <button class="tab" data-tab="positions">Positions &amp; log</button>
+  <button class="tab" data-tab="alerts">Alerts</button>
+  <button class="tab" data-tab="settings">Settings</button>
+</nav>
+
+<main>
+
+<!-- ------------------------------------------------------------ dashboard -->
+<section class="page active" id="page-dashboard">
+  <div class="grid cols-4" id="kpis"></div>
+  <div class="grid cols-2">
+    <div class="card">
+      <div class="card-head"><h2>Account equity</h2><span class="muted" id="equityNote"></span></div>
+      <canvas id="equityChart" height="200"></canvas>
+    </div>
+    <div class="card">
+      <div class="card-head"><h2>NIFTY 50</h2>
+        <span class="muted" id="indexNote"></span></div>
+      <canvas id="indexChart" height="200"></canvas>
+    </div>
+  </div>
+  <div class="card" id="watchCard">
+    <div class="card-head"><h2>Session watch &mdash; opening-range low reclaim</h2>
+      <span class="muted" id="watchGates"></span>
+      <button class="primary small" id="watchBtn">Scan now</button></div>
+    <p class="step-why">While the app is open and the session is running, it scans the universe
+      every three minutes for the one setup that survived the split, checks every gate, and lists
+      what it finds. <strong>It never places anything</strong> &mdash; an order still needs the
+      risk check and your yes.</p>
+    <div id="watchStatus" class="status"></div>
+    <div id="watchOut"></div>
+  </div>
+
+  <div class="grid cols-2">
+    <div class="card">
+      <div class="card-head"><h2>The chain, right now</h2></div>
+      <div id="chainState" class="chain"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><h2>Activity</h2><button class="ghost small" id="tickBtn">Run a bracket check now</button></div>
+      <div id="events" class="events"></div>
+    </div>
+  </div>
+  <div class="card warn-card">
+    <h2>Read this once</h2>
+    <p>This is software that reads free, delayed public data and does arithmetic on a
+      <strong>simulated</strong> account. It is not financial advice, it cannot see the future, and
+      most people who day trade lose money. Nothing here can reach a real broker: there is no
+      brokerage connector, no API key and no order path out of this machine.</p>
+  </div>
+</section>
+
+<!-- -------------------------------------------------------------- scanner -->
+<section class="page" id="page-scanner">
+  <div class="card">
+    <div class="card-head">
+      <h2>Chart Scanner</h2>
+      <span class="muted">a scan is a list of charts that matched a rule &mdash; never a list of stocks to buy</span>
+    </div>
+    <div class="controls">
+      <label>Universe
+        <select id="scanGroup">
+          <option value="nifty50">NIFTY 50</option>
+          <option value="next50">NIFTY NEXT 50</option>
+          <option value="nifty100">Both</option>
+        </select>
+      </label>
+      <label>Opening range
+        <select id="scanOr"><option value="15">15 minutes</option><option value="30">30 minutes</option><option value="5">5 minutes</option></select>
+      </label>
+      <label>Min price &#8377;<input type="number" id="scanMinPrice" value="0" min="0" step="10" /></label>
+      <button class="primary" id="scanOrbBtn">Scan opening-range breakouts</button>
+      <button id="scanDailyBtn">Pre-market scan (daily closes)</button>
+    </div>
+    <div id="scanStatus" class="status"></div>
+    <div id="scanResult"></div>
+  </div>
+</section>
+
+<!-- --------------------------------------------------------------- movers -->
+<section class="page" id="page-movers">
+  <div class="card">
+    <div class="card-head">
+      <h2>Movers &mdash; which names actually swing</h2>
+      <span class="muted">room to trade is not the same as a good trade</span>
+    </div>
+    <div class="controls">
+      <label>Universe
+        <select id="movGroup">
+          <option value="nifty50">NIFTY 50</option>
+          <option value="next50">NIFTY NEXT 50</option>
+          <option value="nifty100">Both</option>
+        </select>
+      </label>
+      <label>Look back
+        <select id="movSessions"><option value="20">20 sessions</option><option value="10">10 sessions</option><option value="40">40 sessions</option></select>
+      </label>
+      <label>Order by
+        <select id="movSort">
+          <option value="score">swing score</option>
+          <option value="day_range_pct">day range</option>
+          <option value="orb_target_rate">the setup's own target rate</option>
+          <option value="turnover">turnover</option>
+        </select>
+      </label>
+      <button class="primary" id="movRankBtn">Rank them</button>
+      <button id="movLoadBtn">Show the last ranking</button>
+    </div>
+    <div id="movStatus" class="status"></div>
+    <div class="note warn" id="movCaveat">A high score means these names have had room to work
+      with, day after day, in both directions. It is not a forecast, and no screen makes a stock
+      predictable: the opening-range columns show how that same setup actually fared on those very
+      sessions, so the score cannot be read as a promise.</div>
+    <div id="movResult"></div>
+  </div>
+</section>
+
+<!-- ------------------------------------------------------------- the feed -->
+<section class="page" id="page-feed">
+  <div class="card">
+    <div class="card-head"><h2>News feed</h2>
+      <span class="muted" id="feedMeta"></span>
+      <button class="small" id="feedReadBtn">Mark all read</button>
+      <button class="primary small" id="feedPollBtn">Poll now</button></div>
+    <p class="step-why">Polled in the background every two and a half minutes, <em>whether or
+      not the market is open</em> &mdash; results land after the close and a Sunday headline is
+      the reason Monday gaps. It follows the market plus whatever you hold, plan or just found,
+      on a rotating cursor. Aggregator headlines, not exchange filings.</p>
+    <div class="controls tight">
+      <label>Only this name <input id="feedSymbol" placeholder="all" autocomplete="off" /></label>
+      <label>Only this tag
+        <select id="feedTag">
+          <option value="">all</option>
+          <option value="results">results</option>
+          <option value="order win">order win</option>
+          <option value="deal">deal</option>
+          <option value="guidance">guidance</option>
+          <option value="regulatory">regulatory</option>
+          <option value="capital">capital</option>
+          <option value="management">management</option>
+          <option value="capex">capex</option>
+        </select>
+      </label>
+      <button id="feedFilterBtn">Filter</button>
+      <button id="feedClearBtn">Clear</button>
+    </div>
+    <div id="feedStatus" class="status"></div>
+    <div id="feedWatching" class="legend"></div>
+    <div id="feedOut"></div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- invest -->
+<section class="page" id="page-invest">
+  <div class="card warn-card">
+    <h2>Why this tab exists</h2>
+    <p>The third skill pack is not a day-trading pack: its model is targets, a rebalance band
+      and tax lots &mdash; own things, trade rarely. That is worth having here because every
+      measurement in this app says the <em>cost of trading</em>, not the choice of setup, is
+      what empties the account. Run the comparison below and read it before using anything
+      else on this page.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><h2>Holding vs day trading, measured</h2>
+      <button class="primary small" id="ltRunBtn">Run the comparison</button>
+      <button class="small" id="ltLoadBtn">Show the last run</button></div>
+    <div id="ltStatus" class="status"></div>
+    <div id="ltOut"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><h2>Targets</h2>
+      <span class="muted">a screen is a filter, never a recommendation</span></div>
+    <div class="controls">
+      <label>Method
+        <select id="tgMethod">
+          <option value="momentum">momentum top N, above the 200-day</option>
+          <option value="equal">equal weight the whole list</option>
+        </select>
+      </label>
+      <label>Hold <input type="number" id="tgHold" value="10" min="2" max="30" /></label>
+      <button class="primary" id="tgBuildBtn">Build targets</button>
+      <button id="tgLoadBtn">Show saved</button>
+    </div>
+    <div id="tgStatus" class="status"></div>
+    <div id="tgOut"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><h2>Rebalance</h2>
+      <span class="muted">only what drifts past the band trades; sells before buys</span></div>
+    <div class="controls">
+      <label>Band (points) <input type="number" id="rbBand" value="5" step="0.5" min="0" /></label>
+      <button id="rbDriftBtn">Show the drift</button>
+      <button class="primary" id="rbWriteBtn">Write the proposals</button>
+      <button id="rbBasketBtn">Risk-check and approve the basket</button>
+    </div>
+    <div id="rbStatus" class="status"></div>
+    <div id="rbOut"></div>
+    <div id="basketOut"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><h2>Tax lots</h2>
+      <span class="muted">not tax advice, and no tax rate is named here</span>
+      <button class="small" id="txBtn">Refresh</button>
+      <button class="small" id="txHarvestBtn">Harvest candidates</button></div>
+    <div id="txOut"></div>
+  </div>
+</section>
+
+<!-- ----------------------------------------------------------- discipline -->
+<section class="page" id="page-discipline">
+  <div class="card">
+    <div class="card-head"><h2>Market regime &mdash; the "not today" gate</h2>
+      <button class="primary small" id="regimeBtn">Read the regime</button></div>
+    <p class="step-why">This app only ever buys. A long-only breakout system takes its worst
+      losses when the whole market is rolling over and every breakout fails. Distribution days
+      and participation make that visible <em>before</em> the trade, and the Risk Manager blocks
+      new entries when this says so.</p>
+    <div id="regimeOut"></div>
+  </div>
+
+  <div class="grid cols-2">
+    <div class="card">
+      <div class="card-head"><h2>Circuit breaker &amp; heat</h2>
+        <button class="small" id="disciplineBtn">Check</button></div>
+      <p class="step-why">Loss limits on realised damage, a cooldown after consecutive losses,
+        and a cap on total open risk. Getting out is never blocked by any of it.</p>
+      <div id="disciplineOut"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><h2>Your expectancy</h2>
+        <button class="small" id="perfBtn">Recompute</button></div>
+      <p class="step-why">win rate &times; average win &minus; loss rate &times; average loss.
+        Positive and there is an edge so far; negative and sizing up only loses faster.</p>
+      <div id="perfOut"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><h2>Does any of this actually work?</h2>
+      <button class="primary small" id="btRunBtn">Backtest 60 days</button>
+      <button class="small" id="btSweepBtn">Run the whole grid</button>
+      <button class="small" id="btLoadBtn">Show the last run</button></div>
+    <p class="step-why">The setup re-run over every session in the 60-day pool, across the
+      universe, with and without the regime gate &mdash; same entries, same exits, so the
+      comparison is fair. Takes about half a minute.</p>
+    <div id="btStatus" class="status"></div>
+    <div id="btOut"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><h2>Seven setups, one honest test</h2>
+      <button class="primary small" id="resRunBtn">Test the bank</button>
+      <button class="small" id="resLoadBtn">Show the last test</button></div>
+    <p class="step-why">Seven long-only setups, all written down before anything ran, over the
+      same sessions. The older 60% of sessions are the <strong>design</strong> half and the
+      newer 40% the <strong>confirm</strong> half: a setup counts only if it is positive in
+      both, on 20+ trades each, and still positive after charges. Every setup is shown,
+      including the losers.</p>
+    <div id="resStatus" class="status"></div>
+    <div id="resOut"></div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- trade -->
+<section class="page" id="page-trade">
+  <div class="card symbol-card">
+    <div class="controls">
+      <label>Symbol
+        <input list="symbolList" id="tradeSymbol" placeholder="RELIANCE" autocomplete="off" />
+        <datalist id="symbolList"></datalist>
+      </label>
+      <label>Setup
+        <select id="tradeSetup">
+          <option value="or_low_reclaim">Opening-range low reclaim (the one that survived)</option>
+          <option value="orb">Opening-range breakout</option>
+          <option value="level">A level I name</option>
+        </select>
+      </label>
+      <label id="levelWrap" class="hidden">Level &#8377;<input type="number" id="tradeLevel" step="0.05" /></label>
+      <label>Volume check
+        <select id="tradeVolX"><option value="">none</option><option value="1">1.0x</option><option value="1.5">1.5x</option><option value="2">2.0x</option></select>
+      </label>
+      <button class="primary" id="loadSymbolBtn">Load chart</button>
+    </div>
+    <div class="chartwrap">
+      <canvas id="priceChart" height="320"></canvas>
+      <div id="chartLegend" class="legend"></div>
+    </div>
+  </div>
+
+  <ol class="stepper" id="stepper">
+    <li class="step" id="step-news">
+      <div class="step-head"><span class="stepnum">2</span><h3>News Monitor</h3>
+        <button class="primary small" id="newsBtn">What is around this name</button></div>
+      <p class="step-why">What is moving it, before you time anything. Aggregator headlines in
+        India time &mdash; not exchange filings, so check anything that matters on nseindia.com.</p>
+      <div class="controls tight">
+        <label>Look back
+          <select id="newsHours"><option value="24">24 hours</option><option value="12">12 hours</option><option value="48">2 days</option><option value="168">a week</option></select>
+        </label>
+      </div>
+      <div class="step-body" id="newsOut"></div>
+    </li>
+
+    <li class="step" id="step-entry">
+      <div class="step-head"><span class="stepnum">3</span><h3>Entry Timer</h3>
+        <button class="primary small" id="entryBtn">Check the entry</button></div>
+      <p class="step-why">The entry is the first <em>completed</em> bar that CLOSES above the level. A wick above is not an entry.</p>
+      <div class="step-body" id="entryOut"></div>
+    </li>
+
+    <li class="step" id="step-exit">
+      <div class="step-head"><span class="stepnum">4</span><h3>Exit Planner</h3>
+        <button class="primary small" id="planBtn">Set the stop and target</button></div>
+      <p class="step-why">Stop and target are decided <em>before</em> the entry, so nothing has to be decided mid-move.</p>
+      <div class="controls tight">
+        <label>Stop
+          <select id="stopRule">
+            <option value="swing-low">the low since the break (for a reclaim)</option>
+            <option value="or-low">opening-range low</option>
+            <option value="or-mid">opening-range midpoint</option>
+            <option value="atr:1.5">1.5 x ATR(14)</option>
+            <option value="pct:0.5">0.5% under the entry</option>
+            <option value="pct:1">1% under the entry</option>
+          </select>
+        </label>
+        <label>Target
+          <select id="targetRule"><option value="2R">2R</option><option value="1.5R">1.5R</option><option value="1R">1R</option><option value="3R">3R</option></select>
+        </label>
+        <label>Entry price (optional)
+          <input type="number" id="planEntry" step="0.05" placeholder="the Entry Timer's" />
+        </label>
+      </div>
+      <div class="step-body" id="planOut"></div>
+    </li>
+
+    <li class="step" id="step-tm">
+      <div class="step-head"><span class="stepnum">5</span><h3>Time Machine</h3>
+        <button class="primary small" id="tmBtn">Replay 10,000 sessions</button></div>
+      <p class="step-why">Every remaining bar is drawn from this stock's own bars at that time of day over the last 60 days, plus the same rule re-run on every past session. A simulation, never a prediction.</p>
+      <div class="step-body" id="tmOut"></div>
+    </li>
+
+    <li class="step" id="step-size">
+      <div class="step-head"><span class="stepnum">6</span><h3>Budget Manager</h3>
+        <button class="primary small" id="sizeBtn">Size the position</button></div>
+      <p class="step-why">The stop decides the size. Four limits, and the smallest one wins.</p>
+      <div class="step-body" id="sizeOut"></div>
+    </li>
+
+    <li class="step" id="step-risk">
+      <div class="step-head"><span class="stepnum">7</span><h3>Risk Manager</h3>
+        <button class="primary small" id="riskBtn">Run the risk check</button></div>
+      <p class="step-why">A BLOCK is final for that order: it is never shown for a yes. An order that only gets you out is never blocked by a day limit.</p>
+      <div class="step-body" id="riskOut"></div>
+    </li>
+
+    <li class="step" id="step-ticket">
+      <div class="step-head"><span class="stepnum">8</span><h3>Paper broker</h3>
+        <button class="primary small" id="ticketBtn">Show the ticket</button></div>
+      <p class="step-why">Three gates: the risk check passed <em>this exact order</em> today, you type an explicit yes, and you confirm once more. Then it fills in the simulated account.</p>
+      <div class="step-body" id="ticketOut"></div>
+    </li>
+  </ol>
+</section>
+
+<!-- ------------------------------------------------------------ positions -->
+<section class="page" id="page-positions">
+  <div class="card">
+    <div class="card-head"><h2>Open positions</h2>
+      <span class="muted" id="posNote"></span></div>
+    <div id="positionsOut"></div>
+  </div>
+  <div class="grid cols-2">
+    <div class="card">
+      <div class="card-head"><h2>Closed round trips</h2></div>
+      <div id="closedOut"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><h2>Order log</h2></div>
+      <div id="orderLogOut"></div>
+    </div>
+  </div>
+</section>
+
+<!-- --------------------------------------------------------------- alerts -->
+<section class="page" id="page-alerts">
+  <div class="card">
+    <div class="card-head"><h2>Price alerts</h2>
+      <span class="muted">an alert is information, never an order</span></div>
+    <div class="controls">
+      <button class="primary" id="alertFromPlanBtn">Three alerts from the current plan</button>
+      <button id="alertCheckBtn">Check them now</button>
+    </div>
+    <div class="controls tight">
+      <label>Symbol <input id="alertSymbol" placeholder="RELIANCE" /></label>
+      <label>Type
+        <select id="alertType">
+          <option value="above">price at or above</option>
+          <option value="below">price at or below</option>
+          <option value="pct_move">percent move from the previous close</option>
+          <option value="time">a time of day</option>
+          <option value="opening_bell">the opening bell</option>
+        </select>
+      </label>
+      <label>Value <input id="alertValue" placeholder="1340.50 / 2 / 15:20" /></label>
+      <button id="alertAddBtn">Add</button>
+    </div>
+    <div id="alertStatus" class="status"></div>
+    <div id="alertsOut"></div>
+  </div>
+</section>
+
+<!-- ------------------------------------------------------------- settings -->
+<section class="page" id="page-settings">
+  <div class="grid cols-2">
+    <div class="card">
+      <div class="card-head"><h2>Your rules</h2>
+        <span class="muted">every number the chain uses comes from here</span></div>
+      <div id="configForm" class="configform"></div>
+      <div class="controls">
+        <button class="primary" id="saveConfigBtn">Save the rules</button>
+        <span id="configStatus" class="status"></span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head"><h2>The paper account</h2></div>
+      <div id="accountBox"></div>
+      <div class="controls">
+        <label>Open a fresh account with &#8377;<input type="number" id="resetAmount" value="500000" step="10000" /></label>
+        <button class="danger" id="resetBtn">Reset the paper account</button>
+      </div>
+      <p class="muted small">A reset wipes the simulated cash, positions, trades and the whole chain's
+        working files. It touches nothing outside this folder, because there is nothing outside it to touch.</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-head"><h2>The chain's files</h2>
+      <span class="muted">each step reads what the one before it wrote &mdash; same as the skill pack</span></div>
+    <div id="filesOut"></div>
+  </div>
+</section>
+
+</main>
+
+<div id="toast" class="toast"></div>
+<div id="modal" class="modal hidden">
+  <div class="modal-box">
+    <h2 id="modalTitle">Confirm</h2>
+    <div id="modalBody"></div>
+    <div class="modal-actions">
+      <button id="modalCancel">Cancel</button>
+      <button class="primary" id="modalOk">Yes, fill it in the paper account</button>
+    </div>
+  </div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>

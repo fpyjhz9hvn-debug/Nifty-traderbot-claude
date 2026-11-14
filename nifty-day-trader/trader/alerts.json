@@ -1,0 +1,70 @@
+{
+  "as_of": "2026-11-13 13:27",
+  "rules": [
+    {
+      "id": "bajfinance-plan-stop",
+      "type": "stop",
+      "symbol": "BAJFINANCE.NS",
+      "display": "BAJFINANCE",
+      "price": 1098.75,
+      "pct": null,
+      "at": null,
+      "label": "stop 1098.75",
+      "date": "2026-11-13",
+      "rearm": false,
+      "created": "2026-11-13 13:09"
+    },
+    {
+      "id": "bajfinance-plan-target",
+      "type": "target",
+      "symbol": "BAJFINANCE.NS",
+      "display": "BAJFINANCE",
+      "price": 1123.8,
+      "pct": null,
+      "at": null,
+      "label": "target 1123.80",
+      "date": "2026-11-13",
+      "rearm": false,
+      "created": "2026-11-13 13:09"
+    },
+    {
+      "id": "infy-plan-stop",
+      "type": "stop",
+      "symbol": "INFY.NS",
+      "display": "INFY",
+      "price": 1136.38,
+      "pct": null,
+      "at": null,
+      "label": "stop 1136.38",
+      "date": "2026-11-13",
+      "rearm": false,
+      "created": "2026-11-13 13:27"
+    },
+    {
+      "id": "infy-plan-target",
+      "type": "target",
+      "symbol": "INFY.NS",
+      "display": "INFY",
+      "price": 1153.54,
+      "pct": null,
+      "at": null,
+      "label": "target 1153.54",
+      "date": "2026-11-13",
+      "rearm": false,
+      "created": "2026-11-13 13:27"
+    },
+    {
+      "id": "flat-by-2026-11-13",
+      "type": "time",
+      "symbol": null,
+      "display": null,
+      "price": null,
+      "pct": null,
+      "at": "15:20",
+      "label": "flat by 15:20",
+      "date": "2026-11-13",
+      "rearm": false,
+      "created": "2026-11-13 13:27"
+    }
+  ]
+}

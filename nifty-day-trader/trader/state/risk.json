@@ -1,0 +1,1258 @@
+{
+  "as_of": "2026-11-14 10:29",
+  "date": "2026-11-14",
+  "checked": 44,
+  "passed": 0,
+  "blocked": 44,
+  "cash_after_passed": 499274.73,
+  "verdicts": [
+    {
+      "index": 1,
+      "symbol": "ADANIENT.NS",
+      "display": "ADANIENT",
+      "side": "buy",
+      "qty": 1,
+      "kind": "entry",
+      "entry_price": 2688.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 2688.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "2ad72f3ade12e4be",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 2,
+      "symbol": "ADANIPORTS.NS",
+      "display": "ADANIPORTS",
+      "side": "buy",
+      "qty": 2,
+      "kind": "entry",
+      "entry_price": 1903.3,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3806.6,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "da3e03d237106f0c",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 3,
+      "symbol": "ASIANPAINT.NS",
+      "display": "ASIANPAINT",
+      "side": "buy",
+      "qty": 1,
+      "kind": "entry",
+      "entry_price": 2550.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 2550.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "f56e5aa9cd35d62c",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 4,
+      "symbol": "AXISBANK.NS",
+      "display": "AXISBANK",
+      "side": "buy",
+      "qty": 3,
+      "kind": "entry",
+      "entry_price": 1331.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3993.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "9174c18d66e1ef8b",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 5,
+      "symbol": "BAJAJFINSV.NS",
+      "display": "BAJAJFINSV",
+      "side": "buy",
+      "qty": 2,
+      "kind": "entry",
+      "entry_price": 1865.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3730.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "9e1cf4c470100762",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 6,
+      "symbol": "BAJFINANCE.NS",
+      "display": "BAJFINANCE",
+      "side": "buy",
+      "qty": 3,
+      "kind": "entry",
+      "entry_price": 1117.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3351.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [
+        "The saved price is 1140 minutes old, so it was not used."
+      ],
+      "fingerprint": "fbb2b1daa3b80e04",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 7,
+      "symbol": "BEL.NS",
+      "display": "BEL",
+      "side": "buy",
+      "qty": 10,
+      "kind": "entry",
+      "entry_price": 400.85,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4008.5,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "e8ee6092e141502a",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 8,
+      "symbol": "BHARTIARTL.NS",
+      "display": "BHARTIARTL",
+      "side": "buy",
+      "qty": 2,
+      "kind": "entry",
+      "entry_price": 2106.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4212.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "ce4310ef9d5530bd",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 9,
+      "symbol": "CIPLA.NS",
+      "display": "CIPLA",
+      "side": "buy",
+      "qty": 3,
+      "kind": "entry",
+      "entry_price": 1391.8,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4175.4,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "5ddbdc1e4f237792",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 10,
+      "symbol": "COALINDIA.NS",
+      "display": "COALINDIA",
+      "side": "buy",
+      "qty": 10,
+      "kind": "entry",
+      "entry_price": 403.5,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4035.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "84309805bd7d5b46",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 11,
+      "symbol": "DRREDDY.NS",
+      "display": "DRREDDY",
+      "side": "buy",
+      "qty": 3,
+      "kind": "entry",
+      "entry_price": 1380.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4140.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "c141ae3c769544b9",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 12,
+      "symbol": "ETERNAL.NS",
+      "display": "ETERNAL",
+      "side": "buy",
+      "qty": 12,
+      "kind": "entry",
+      "entry_price": 363.65,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4363.8,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "f10ff52a9de74922",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 13,
+      "symbol": "GRASIM.NS",
+      "display": "GRASIM",
+      "side": "buy",
+      "qty": 1,
+      "kind": "entry",
+      "entry_price": 3034.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3034.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "4d3f3be9fb9cdc37",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 14,
+      "symbol": "HCLTECH.NS",
+      "display": "HCLTECH",
+      "side": "buy",
+      "qty": 3,
+      "kind": "entry",
+      "entry_price": 1378.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4134.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "bc4dd6b7d07ffe36",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 15,
+      "symbol": "HDFCBANK.NS",
+      "display": "HDFCBANK",
+      "side": "buy",
+      "qty": 5,
+      "kind": "entry",
+      "entry_price": 804.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4020.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "798477ea691fe916",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 16,
+      "symbol": "HDFCLIFE.NS",
+      "display": "HDFCLIFE",
+      "side": "buy",
+      "qty": 7,
+      "kind": "entry",
+      "entry_price": 592.25,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4145.75,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "6f22513253fabdb9",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 17,
+      "symbol": "HINDALCO.NS",
+      "display": "HINDALCO",
+      "side": "buy",
+      "qty": 4,
+      "kind": "entry",
+      "entry_price": 943.6,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3774.4,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "c5b889a1047be807",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 18,
+      "symbol": "HINDUNILVR.NS",
+      "display": "HINDUNILVR",
+      "side": "buy",
+      "qty": 2,
+      "kind": "entry",
+      "entry_price": 1992.9,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3985.8,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "3d4719ada1659a05",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 19,
+      "symbol": "ICICIBANK.NS",
+      "display": "ICICIBANK",
+      "side": "buy",
+      "qty": 2,
+      "kind": "entry",
+      "entry_price": 1583.6,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3167.2,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "3da1efe196a0eb0c",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 20,
+      "symbol": "INDUSINDBK.NS",
+      "display": "INDUSINDBK",
+      "side": "buy",
+      "qty": 4,
+      "kind": "entry",
+      "entry_price": 914.4,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3657.6,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "3da163fc7284de73",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 21,
+      "symbol": "INFY.NS",
+      "display": "INFY",
+      "side": "buy",
+      "qty": 3,
+      "kind": "entry",
+      "entry_price": 1141.5,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3424.5,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [
+        "The saved price is 1140 minutes old, so it was not used."
+      ],
+      "fingerprint": "d65d1a0ac7a71a01",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 22,
+      "symbol": "ITC.NS",
+      "display": "ITC",
+      "side": "buy",
+      "qty": 15,
+      "kind": "entry",
+      "entry_price": 285.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4275.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "70e2b895cfefe589",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 23,
+      "symbol": "JIOFIN.NS",
+      "display": "JIOFIN",
+      "side": "buy",
+      "qty": 19,
+      "kind": "entry",
+      "entry_price": 227.5,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4322.5,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "58eb3e80dc971efe",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 24,
+      "symbol": "JSWSTEEL.NS",
+      "display": "JSWSTEEL",
+      "side": "buy",
+      "qty": 3,
+      "kind": "entry",
+      "entry_price": 1348.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4044.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "098cb0933765960b",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 25,
+      "symbol": "KOTAKBANK.NS",
+      "display": "KOTAKBANK",
+      "side": "buy",
+      "qty": 9,
+      "kind": "entry",
+      "entry_price": 488.55,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4396.95,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "338c685eb4ed0da2",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 26,
+      "symbol": "LT.NS",
+      "display": "LT",
+      "side": "buy",
+      "qty": 1,
+      "kind": "entry",
+      "entry_price": 4143.8,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4143.8,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "0a8aeac6c07a78d3",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 27,
+      "symbol": "M&M.NS",
+      "display": "M&M",
+      "side": "buy",
+      "qty": 1,
+      "kind": "entry",
+      "entry_price": 3333.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3333.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "e0a8121585d46e1b",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 28,
+      "symbol": "NESTLEIND.NS",
+      "display": "NESTLEIND",
+      "side": "buy",
+      "qty": 3,
+      "kind": "entry",
+      "entry_price": 1263.2,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3789.6,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "09d570ef3634d5a7",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 29,
+      "symbol": "NTPC.NS",
+      "display": "NTPC",
+      "side": "buy",
+      "qty": 13,
+      "kind": "entry",
+      "entry_price": 319.1,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4148.3,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "e59c8313b7f92940",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 30,
+      "symbol": "ONGC.NS",
+      "display": "ONGC",
+      "side": "buy",
+      "qty": 19,
+      "kind": "entry",
+      "entry_price": 225.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4275.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "f6283985193eb989",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 31,
+      "symbol": "POWERGRID.NS",
+      "display": "POWERGRID",
+      "side": "buy",
+      "qty": 17,
+      "kind": "entry",
+      "entry_price": 257.45,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4376.65,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "6a71d017c06d78e2",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 32,
+      "symbol": "RELIANCE.NS",
+      "display": "RELIANCE",
+      "side": "buy",
+      "qty": 3,
+      "kind": "entry",
+      "entry_price": 1339.7,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4019.1,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "125ac71af604877a",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 33,
+      "symbol": "SBILIFE.NS",
+      "display": "SBILIFE",
+      "side": "buy",
+      "qty": 2,
+      "kind": "entry",
+      "entry_price": 1789.9,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3579.8,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "76e4c8f0d204b5b6",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 34,
+      "symbol": "SBIN.NS",
+      "display": "SBIN",
+      "side": "buy",
+      "qty": 4,
+      "kind": "entry",
+      "entry_price": 1080.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4320.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "c968f0afa13ada04",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 35,
+      "symbol": "SHRIRAMFIN.NS",
+      "display": "SHRIRAMFIN",
+      "side": "buy",
+      "qty": 4,
+      "kind": "entry",
+      "entry_price": 970.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3880.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "b29336e22b85bce7",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 36,
+      "symbol": "SUNPHARMA.NS",
+      "display": "SUNPHARMA",
+      "side": "buy",
+      "qty": 2,
+      "kind": "entry",
+      "entry_price": 1880.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3760.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "8aebef2b26b4ca67",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 37,
+      "symbol": "TATACONSUM.NS",
+      "display": "TATACONSUM",
+      "side": "buy",
+      "qty": 4,
+      "kind": "entry",
+      "entry_price": 1079.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4316.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "1ee4b7d07393d47e",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 38,
+      "symbol": "TATASTEEL.NS",
+      "display": "TATASTEEL",
+      "side": "buy",
+      "qty": 23,
+      "kind": "entry",
+      "entry_price": 186.68,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4293.64,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "3b8186a48b6c87ba",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 39,
+      "symbol": "TCS.NS",
+      "display": "TCS",
+      "side": "buy",
+      "qty": 1,
+      "kind": "entry",
+      "entry_price": 2407.5,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 2407.5,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "5fb1074236524a6c",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 40,
+      "symbol": "TECHM.NS",
+      "display": "TECHM",
+      "side": "buy",
+      "qty": 2,
+      "kind": "entry",
+      "entry_price": 1764.0,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3528.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "78000babcdd60550",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 41,
+      "symbol": "TMCV.NS",
+      "display": "TMCV",
+      "side": "buy",
+      "qty": 10,
+      "kind": "entry",
+      "entry_price": 433.55,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4335.5,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "e8013a791cd88a34",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 42,
+      "symbol": "TMPV.NS",
+      "display": "TMPV",
+      "side": "buy",
+      "qty": 15,
+      "kind": "entry",
+      "entry_price": 287.4,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4311.0,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "cee663dda99b102d",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 43,
+      "symbol": "TRENT.NS",
+      "display": "TRENT",
+      "side": "buy",
+      "qty": 1,
+      "kind": "entry",
+      "entry_price": 3165.2,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 3165.2,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "9eeca03c6c6131ca",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    },
+    {
+      "index": 44,
+      "symbol": "WIPRO.NS",
+      "display": "WIPRO",
+      "side": "buy",
+      "qty": 22,
+      "kind": "entry",
+      "entry_price": 194.6,
+      "entry_why": "the plan's entry",
+      "stop": null,
+      "target": null,
+      "risk_per_share": null,
+      "max_loss": null,
+      "value": 4281.2,
+      "reward_risk": null,
+      "verdict": "BLOCK",
+      "reasons": [
+        "window: the NSE is closed today."
+      ],
+      "warnings": [],
+      "fingerprint": "0556abd9ad250dfb",
+      "today_before_this": {
+        "trades": 0,
+        "max_trades": 3,
+        "risked": 0,
+        "max_daily_loss": 7500.0
+      }
+    }
+  ],
+  "discipline": {
+    "circuit_breaker": "TRADING_ALLOWED",
+    "circuit_breaker_detail": "No loss limit is active. Today's realised P&L is \u20b90.00 of a \u20b910,000.00 daily limit.",
+    "heat": 0.0,
+    "heat_pct": 0.0,
+    "heat_limit": 30000.0,
+    "revenge_window": false,
+    "regime": "Broadening",
+    "regime_recommendation": "NEW_ENTRY_ALLOWED",
+    "regime_allows_entries": true
+  },
+  "note": "A PASS only means the order is allowed to be shown to you. It is not a yes, and it is not a recommendation."
+}

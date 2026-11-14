@@ -1,0 +1,38 @@
+{
+  "symbol": "INFY.NS",
+  "display": "INFY",
+  "name": "Infosys",
+  "setup": "or_low_reclaim",
+  "interval": "5m",
+  "as_of": "2026-11-13 22:48",
+  "date": "2026-11-13",
+  "or_minutes": 15,
+  "min_volume_x": null,
+  "status": "triggered",
+  "bars": 74,
+  "last_close": 1141.5,
+  "last_bar": "15:30",
+  "opening_range": {
+    "high": 1145.6,
+    "low": 1140.3,
+    "max_close": 1144.9,
+    "bars": 3,
+    "avg_volume": 81956.0,
+    "from": "09:15",
+    "to": "09:30"
+  },
+  "level": 1140.3,
+  "level_label": "the opening-range low",
+  "entry": 1140.4,
+  "entry_time": "12:55",
+  "entry_bar": 44,
+  "broke_at": "12:05",
+  "suggested_stop": 1137.3,
+  "over_pct": 0.01,
+  "bars_ago": 30,
+  "stale": true,
+  "message": "TRIGGERED at 12:55, 1140.40: the 12:55 bar closed back above the opening-range low 1140.30 after losing it at 12:05. The suggested stop is the low since the break, 1137.30. Nothing was placed.",
+  "notes": [
+    "The trigger is 30 bars old; the last close is 1141.50."
+  ]
+}

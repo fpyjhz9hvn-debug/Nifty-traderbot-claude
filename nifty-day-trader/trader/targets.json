@@ -1,0 +1,472 @@
+{
+  "as_of": "2026-11-14 10:23",
+  "method": "equal",
+  "method_note": "equal weight across the list",
+  "universe": "nifty50",
+  "hold": 51,
+  "targets": [
+    {
+      "symbol": "ADANIENT.NS",
+      "display": "ADANIENT",
+      "name": "Adani Enterprises",
+      "score": 0.0,
+      "price": 2688.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "ADANIPORTS.NS",
+      "display": "ADANIPORTS",
+      "name": "Adani Ports & SEZ",
+      "score": 0.0,
+      "price": 1903.3,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "APOLLOHOSP.NS",
+      "display": "APOLLOHOSP",
+      "name": "Apollo Hospitals",
+      "score": 0.0,
+      "price": 8526.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "ASIANPAINT.NS",
+      "display": "ASIANPAINT",
+      "name": "Asian Paints",
+      "score": 0.0,
+      "price": 2536.5,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "AXISBANK.NS",
+      "display": "AXISBANK",
+      "name": "Axis Bank",
+      "score": 0.0,
+      "price": 1331.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "BAJAJ-AUTO.NS",
+      "display": "BAJAJ-AUTO",
+      "name": "Bajaj Auto",
+      "score": 0.0,
+      "price": 10945.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "BAJFINANCE.NS",
+      "display": "BAJFINANCE",
+      "name": "Bajaj Finance",
+      "score": 0.0,
+      "price": 1117.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "BAJAJFINSV.NS",
+      "display": "BAJAJFINSV",
+      "name": "Bajaj Finserv",
+      "score": 0.0,
+      "price": 1865.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "BEL.NS",
+      "display": "BEL",
+      "name": "Bharat Electronics",
+      "score": 0.0,
+      "price": 400.85,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "BHARTIARTL.NS",
+      "display": "BHARTIARTL",
+      "name": "Bharti Airtel",
+      "score": 0.0,
+      "price": 2106.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "CIPLA.NS",
+      "display": "CIPLA",
+      "name": "Cipla",
+      "score": 0.0,
+      "price": 1391.8,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "COALINDIA.NS",
+      "display": "COALINDIA",
+      "name": "Coal India",
+      "score": 0.0,
+      "price": 403.5,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "DRREDDY.NS",
+      "display": "DRREDDY",
+      "name": "Dr Reddy's Laboratories",
+      "score": 0.0,
+      "price": 1380.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "EICHERMOT.NS",
+      "display": "EICHERMOT",
+      "name": "Eicher Motors",
+      "score": 0.0,
+      "price": 7650.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "ETERNAL.NS",
+      "display": "ETERNAL",
+      "name": "Eternal (Zomato)",
+      "score": 0.0,
+      "price": 363.65,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "GRASIM.NS",
+      "display": "GRASIM",
+      "name": "Grasim Industries",
+      "score": 0.0,
+      "price": 3034.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "HCLTECH.NS",
+      "display": "HCLTECH",
+      "name": "HCL Technologies",
+      "score": 0.0,
+      "price": 1378.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "HDFCBANK.NS",
+      "display": "HDFCBANK",
+      "name": "HDFC Bank",
+      "score": 0.0,
+      "price": 804.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "HDFCLIFE.NS",
+      "display": "HDFCLIFE",
+      "name": "HDFC Life Insurance",
+      "score": 0.0,
+      "price": 592.25,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "HEROMOTOCO.NS",
+      "display": "HEROMOTOCO",
+      "name": "Hero MotoCorp",
+      "score": 0.0,
+      "price": 5385.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "HINDALCO.NS",
+      "display": "HINDALCO",
+      "name": "Hindalco Industries",
+      "score": 0.0,
+      "price": 943.6,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "HINDUNILVR.NS",
+      "display": "HINDUNILVR",
+      "name": "Hindustan Unilever",
+      "score": 0.0,
+      "price": 1974.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "ICICIBANK.NS",
+      "display": "ICICIBANK",
+      "name": "ICICI Bank",
+      "score": 0.0,
+      "price": 1583.6,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "INDUSINDBK.NS",
+      "display": "INDUSINDBK",
+      "name": "IndusInd Bank",
+      "score": 0.0,
+      "price": 914.4,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "INFY.NS",
+      "display": "INFY",
+      "name": "Infosys",
+      "score": 0.0,
+      "price": 1141.5,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "ITC.NS",
+      "display": "ITC",
+      "name": "ITC",
+      "score": 0.0,
+      "price": 285.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "JIOFIN.NS",
+      "display": "JIOFIN",
+      "name": "Jio Financial Services",
+      "score": 0.0,
+      "price": 227.5,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "JSWSTEEL.NS",
+      "display": "JSWSTEEL",
+      "name": "JSW Steel",
+      "score": 0.0,
+      "price": 1348.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "KOTAKBANK.NS",
+      "display": "KOTAKBANK",
+      "name": "Kotak Mahindra Bank",
+      "score": 0.0,
+      "price": 488.55,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "LT.NS",
+      "display": "LT",
+      "name": "Larsen & Toubro",
+      "score": 0.0,
+      "price": 4143.8,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "M&M.NS",
+      "display": "M&M",
+      "name": "Mahindra & Mahindra",
+      "score": 0.0,
+      "price": 3333.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "MARUTI.NS",
+      "display": "MARUTI",
+      "name": "Maruti Suzuki India",
+      "score": 0.0,
+      "price": 12854.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "NESTLEIND.NS",
+      "display": "NESTLEIND",
+      "name": "Nestle India",
+      "score": 0.0,
+      "price": 1260.9,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "NTPC.NS",
+      "display": "NTPC",
+      "name": "NTPC",
+      "score": 0.0,
+      "price": 319.1,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "ONGC.NS",
+      "display": "ONGC",
+      "name": "Oil & Natural Gas Corp",
+      "score": 0.0,
+      "price": 225.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "POWERGRID.NS",
+      "display": "POWERGRID",
+      "name": "Power Grid Corp",
+      "score": 0.0,
+      "price": 257.45,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "RELIANCE.NS",
+      "display": "RELIANCE",
+      "name": "Reliance Industries",
+      "score": 0.0,
+      "price": 1339.7,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "SBILIFE.NS",
+      "display": "SBILIFE",
+      "name": "SBI Life Insurance",
+      "score": 0.0,
+      "price": 1789.9,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "SBIN.NS",
+      "display": "SBIN",
+      "name": "State Bank of India",
+      "score": 0.0,
+      "price": 1080.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "SHRIRAMFIN.NS",
+      "display": "SHRIRAMFIN",
+      "name": "Shriram Finance",
+      "score": 0.0,
+      "price": 970.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "SUNPHARMA.NS",
+      "display": "SUNPHARMA",
+      "name": "Sun Pharmaceutical",
+      "score": 0.0,
+      "price": 1880.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "TATACONSUM.NS",
+      "display": "TATACONSUM",
+      "name": "Tata Consumer Products",
+      "score": 0.0,
+      "price": 1085.3,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "TMCV.NS",
+      "display": "TMCV",
+      "name": "Tata Motors (commercial vehicles)",
+      "score": 0.0,
+      "price": 433.55,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "TMPV.NS",
+      "display": "TMPV",
+      "name": "Tata Motors Passenger Vehicles",
+      "score": 0.0,
+      "price": 287.4,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "TATASTEEL.NS",
+      "display": "TATASTEEL",
+      "name": "Tata Steel",
+      "score": 0.0,
+      "price": 186.68,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "TCS.NS",
+      "display": "TCS",
+      "name": "Tata Consultancy Services",
+      "score": 0.0,
+      "price": 2407.5,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "TECHM.NS",
+      "display": "TECHM",
+      "name": "Tech Mahindra",
+      "score": 0.0,
+      "price": 1764.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "TITAN.NS",
+      "display": "TITAN",
+      "name": "Titan Company",
+      "score": 0.0,
+      "price": 4844.9,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "TRENT.NS",
+      "display": "TRENT",
+      "name": "Trent",
+      "score": 0.0,
+      "price": 3180.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "ULTRACEMCO.NS",
+      "display": "ULTRACEMCO",
+      "name": "UltraTech Cement",
+      "score": 0.0,
+      "price": 12100.0,
+      "why": "equal weight",
+      "weight": 1.9608
+    },
+    {
+      "symbol": "WIPRO.NS",
+      "display": "WIPRO",
+      "name": "Wipro",
+      "score": 0.0,
+      "price": 194.6,
+      "why": "equal weight",
+      "weight": 1.9608
+    }
+  ],
+  "rejected": [],
+  "total_weight": 100.0,
+  "cash_buffer_pct": 10.0,
+  "note": "Weights for the stock sleeve, which is the account minus the 10% cash buffer. A screen is a filter, never a recommendation, and these rules run on trend and momentum only: free data carries no Indian fundamentals."
+}

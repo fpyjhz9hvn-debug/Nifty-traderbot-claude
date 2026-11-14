@@ -1,0 +1,1056 @@
+{
+  "as_of": "2026-11-13 22:45",
+  "universe": "nifty50",
+  "symbols": 51,
+  "failed": [],
+  "target_r": 2.0,
+  "sessions": 59,
+  "from": "2026-08-18",
+  "to": "2026-11-12",
+  "split": {
+    "design_sessions": 35,
+    "confirm_sessions": 24,
+    "design_to": "2026-10-07",
+    "confirm_from": "2026-10-08",
+    "share": 0.6
+  },
+  "comparisons": 14,
+  "results": [
+    {
+      "key": "or_low_reclaim",
+      "name": "Opening-range low reclaim",
+      "family": "mean reversion",
+      "idea": "It breaks the opening-range low, then closes back above it: a failed breakdown.",
+      "all": {
+        "label": "every session",
+        "trades": 176,
+        "sessions": 59,
+        "wins": 70,
+        "losses": 106,
+        "win_rate_pct": 39.8,
+        "avg_win_r": 1.846,
+        "avg_loss_r": 0.983,
+        "expectancy_r": 0.1423,
+        "total_r": 25.05,
+        "max_drawdown_r": 9.09,
+        "by_outcome": {
+          "stop": 104,
+          "target": 59,
+          "timed out": 13
+        },
+        "net": 3031.37,
+        "charges": 15992.38,
+        "gross": 19023.75
+      },
+      "design": {
+        "label": "design half",
+        "trades": 105,
+        "sessions": 35,
+        "wins": 45,
+        "losses": 60,
+        "win_rate_pct": 42.9,
+        "avg_win_r": 1.868,
+        "avg_loss_r": 1.0,
+        "expectancy_r": 0.2293,
+        "total_r": 24.07,
+        "max_drawdown_r": 8.24,
+        "by_outcome": {
+          "stop": 60,
+          "target": 37,
+          "timed out": 8
+        },
+        "net": 5489.82,
+        "charges": 9546.42,
+        "gross": 15036.24
+      },
+      "confirm": {
+        "label": "confirm half",
+        "trades": 71,
+        "sessions": 24,
+        "wins": 25,
+        "losses": 46,
+        "win_rate_pct": 35.2,
+        "avg_win_r": 1.807,
+        "avg_loss_r": 0.961,
+        "expectancy_r": 0.0138,
+        "total_r": 0.98,
+        "max_drawdown_r": 9.09,
+        "by_outcome": {
+          "stop": 44,
+          "target": 22,
+          "timed out": 5
+        },
+        "net": -2458.45,
+        "charges": 6445.96,
+        "gross": 3987.51
+      },
+      "gated_all": {
+        "label": "regime gate on",
+        "trades": 21,
+        "sessions": 7,
+        "wins": 6,
+        "losses": 15,
+        "win_rate_pct": 28.6,
+        "avg_win_r": 1.75,
+        "avg_loss_r": 0.939,
+        "expectancy_r": -0.1709,
+        "total_r": -3.59,
+        "max_drawdown_r": 5.09,
+        "by_outcome": {
+          "stop": 14,
+          "target": 5,
+          "timed out": 2
+        },
+        "net": -1249.21,
+        "charges": 1906.36,
+        "gross": 657.15
+      },
+      "gated_design": {
+        "label": "gated design",
+        "trades": 0,
+        "expectancy_r": null,
+        "net": 0.0,
+        "win_rate_pct": null,
+        "total_r": 0.0
+      },
+      "gated_confirm": {
+        "label": "gated confirm",
+        "trades": 21,
+        "sessions": 7,
+        "wins": 6,
+        "losses": 15,
+        "win_rate_pct": 28.6,
+        "avg_win_r": 1.75,
+        "avg_loss_r": 0.939,
+        "expectancy_r": -0.1709,
+        "total_r": -3.59,
+        "max_drawdown_r": 5.09,
+        "by_outcome": {
+          "stop": 14,
+          "target": 5,
+          "timed out": 2
+        },
+        "net": -1249.21,
+        "charges": 1906.36,
+        "gross": 657.15
+      },
+      "held_up": {
+        "survives": true,
+        "arms": [
+          {
+            "arm": "every session",
+            "design_expectancy_r": 0.2293,
+            "confirm_expectancy_r": 0.0138,
+            "design_trades": 105,
+            "confirm_trades": 71,
+            "both_halves_positive": true,
+            "enough_trades": true,
+            "net_positive_after_charges": true,
+            "survives": true
+          },
+          {
+            "arm": "regime gate on",
+            "design_expectancy_r": null,
+            "confirm_expectancy_r": -0.1709,
+            "design_trades": 0,
+            "confirm_trades": 21,
+            "both_halves_positive": false,
+            "enough_trades": false,
+            "net_positive_after_charges": false,
+            "survives": false
+          }
+        ]
+      }
+    },
+    {
+      "key": "vwap_reclaim",
+      "name": "VWAP reclaim",
+      "family": "mean reversion",
+      "idea": "Price stretches 0.5% under VWAP, then closes back above it.",
+      "all": {
+        "label": "every session",
+        "trades": 177,
+        "sessions": 59,
+        "wins": 80,
+        "losses": 97,
+        "win_rate_pct": 45.2,
+        "avg_win_r": 1.126,
+        "avg_loss_r": 0.864,
+        "expectancy_r": 0.0356,
+        "total_r": 6.29,
+        "max_drawdown_r": 13.23,
+        "by_outcome": {
+          "timed out": 77,
+          "stop": 75,
+          "target": 25
+        },
+        "net": -2429.71,
+        "charges": 16086.0,
+        "gross": 13656.29
+      },
+      "design": {
+        "label": "design half",
+        "trades": 105,
+        "sessions": 35,
+        "wins": 48,
+        "losses": 57,
+        "win_rate_pct": 45.7,
+        "avg_win_r": 1.13,
+        "avg_loss_r": 0.865,
+        "expectancy_r": 0.047,
+        "total_r": 4.94,
+        "max_drawdown_r": 9.13,
+        "by_outcome": {
+          "timed out": 46,
+          "stop": 44,
+          "target": 15
+        },
+        "net": -1171.39,
+        "charges": 9551.73,
+        "gross": 8380.34
+      },
+      "confirm": {
+        "label": "confirm half",
+        "trades": 72,
+        "sessions": 24,
+        "wins": 32,
+        "losses": 40,
+        "win_rate_pct": 44.4,
+        "avg_win_r": 1.12,
+        "avg_loss_r": 0.862,
+        "expectancy_r": 0.0189,
+        "total_r": 1.36,
+        "max_drawdown_r": 10.13,
+        "by_outcome": {
+          "stop": 31,
+          "timed out": 31,
+          "target": 10
+        },
+        "net": -1258.32,
+        "charges": 6534.27,
+        "gross": 5275.95
+      },
+      "gated_all": {
+        "label": "regime gate on",
+        "trades": 21,
+        "sessions": 7,
+        "wins": 11,
+        "losses": 10,
+        "win_rate_pct": 52.4,
+        "avg_win_r": 0.968,
+        "avg_loss_r": 0.909,
+        "expectancy_r": 0.0742,
+        "total_r": 1.56,
+        "max_drawdown_r": 5.46,
+        "by_outcome": {
+          "timed out": 9,
+          "stop": 9,
+          "target": 3
+        },
+        "net": 3043.84,
+        "charges": 1906.11,
+        "gross": 4949.95
+      },
+      "gated_design": {
+        "label": "gated design",
+        "trades": 0,
+        "expectancy_r": null,
+        "net": 0.0,
+        "win_rate_pct": null,
+        "total_r": 0.0
+      },
+      "gated_confirm": {
+        "label": "gated confirm",
+        "trades": 21,
+        "sessions": 7,
+        "wins": 11,
+        "losses": 10,
+        "win_rate_pct": 52.4,
+        "avg_win_r": 0.968,
+        "avg_loss_r": 0.909,
+        "expectancy_r": 0.0742,
+        "total_r": 1.56,
+        "max_drawdown_r": 5.46,
+        "by_outcome": {
+          "timed out": 9,
+          "stop": 9,
+          "target": 3
+        },
+        "net": 3043.84,
+        "charges": 1906.11,
+        "gross": 4949.95
+      },
+      "held_up": {
+        "survives": false,
+        "arms": [
+          {
+            "arm": "every session",
+            "design_expectancy_r": 0.047,
+            "confirm_expectancy_r": 0.0189,
+            "design_trades": 105,
+            "confirm_trades": 72,
+            "both_halves_positive": true,
+            "enough_trades": true,
+            "net_positive_after_charges": false,
+            "survives": false
+          },
+          {
+            "arm": "regime gate on",
+            "design_expectancy_r": null,
+            "confirm_expectancy_r": 0.0742,
+            "design_trades": 0,
+            "confirm_trades": 21,
+            "both_halves_positive": false,
+            "enough_trades": false,
+            "net_positive_after_charges": true,
+            "survives": false
+          }
+        ]
+      }
+    },
+    {
+      "key": "orb_breakout_volume",
+      "name": "Opening-range breakout, 1.5x volume",
+      "family": "trend",
+      "idea": "The same breakout, but only when the trigger bar carries real volume.",
+      "all": {
+        "label": "every session",
+        "trades": 177,
+        "sessions": 59,
+        "wins": 78,
+        "losses": 98,
+        "win_rate_pct": 44.1,
+        "avg_win_r": 0.965,
+        "avg_loss_r": 0.821,
+        "expectancy_r": -0.0293,
+        "total_r": -5.19,
+        "max_drawdown_r": 19.5,
+        "by_outcome": {
+          "stop": 64,
+          "timed out": 93,
+          "target": 20
+        },
+        "net": -20470.3,
+        "charges": 15979.03,
+        "gross": -4491.27
+      },
+      "design": {
+        "label": "design half",
+        "trades": 105,
+        "sessions": 35,
+        "wins": 42,
+        "losses": 63,
+        "win_rate_pct": 40.0,
+        "avg_win_r": 0.939,
+        "avg_loss_r": 0.848,
+        "expectancy_r": -0.1333,
+        "total_r": -13.99,
+        "max_drawdown_r": 19.5,
+        "by_outcome": {
+          "stop": 43,
+          "timed out": 52,
+          "target": 10
+        },
+        "net": -25747.92,
+        "charges": 9505.6,
+        "gross": -16242.32
+      },
+      "confirm": {
+        "label": "confirm half",
+        "trades": 72,
+        "sessions": 24,
+        "wins": 36,
+        "losses": 35,
+        "win_rate_pct": 50.0,
+        "avg_win_r": 0.996,
+        "avg_loss_r": 0.773,
+        "expectancy_r": 0.1222,
+        "total_r": 8.8,
+        "max_drawdown_r": 5.07,
+        "by_outcome": {
+          "stop": 21,
+          "target": 10,
+          "timed out": 41
+        },
+        "net": 5277.62,
+        "charges": 6473.43,
+        "gross": 11751.05
+      },
+      "gated_all": {
+        "label": "regime gate on",
+        "trades": 21,
+        "sessions": 7,
+        "wins": 12,
+        "losses": 9,
+        "win_rate_pct": 57.1,
+        "avg_win_r": 0.688,
+        "avg_loss_r": 0.772,
+        "expectancy_r": 0.0622,
+        "total_r": 1.31,
+        "max_drawdown_r": 4.29,
+        "by_outcome": {
+          "timed out": 13,
+          "stop": 6,
+          "target": 2
+        },
+        "net": 431.8,
+        "charges": 1860.5,
+        "gross": 2292.3
+      },
+      "gated_design": {
+        "label": "gated design",
+        "trades": 0,
+        "expectancy_r": null,
+        "net": 0.0,
+        "win_rate_pct": null,
+        "total_r": 0.0
+      },
+      "gated_confirm": {
+        "label": "gated confirm",
+        "trades": 21,
+        "sessions": 7,
+        "wins": 12,
+        "losses": 9,
+        "win_rate_pct": 57.1,
+        "avg_win_r": 0.688,
+        "avg_loss_r": 0.772,
+        "expectancy_r": 0.0622,
+        "total_r": 1.31,
+        "max_drawdown_r": 4.29,
+        "by_outcome": {
+          "timed out": 13,
+          "stop": 6,
+          "target": 2
+        },
+        "net": 431.8,
+        "charges": 1860.5,
+        "gross": 2292.3
+      },
+      "held_up": {
+        "survives": false,
+        "arms": [
+          {
+            "arm": "every session",
+            "design_expectancy_r": -0.1333,
+            "confirm_expectancy_r": 0.1222,
+            "design_trades": 105,
+            "confirm_trades": 72,
+            "both_halves_positive": false,
+            "enough_trades": true,
+            "net_positive_after_charges": false,
+            "survives": false
+          },
+          {
+            "arm": "regime gate on",
+            "design_expectancy_r": null,
+            "confirm_expectancy_r": 0.0622,
+            "design_trades": 0,
+            "confirm_trades": 21,
+            "both_halves_positive": false,
+            "enough_trades": false,
+            "net_positive_after_charges": true,
+            "survives": false
+          }
+        ]
+      }
+    },
+    {
+      "key": "gap_down_reclaim",
+      "name": "Gap-down reclaim",
+      "family": "mean reversion",
+      "idea": "Opens 0.4% or more below yesterday's close, then clears the opening range.",
+      "all": {
+        "label": "every session",
+        "trades": 128,
+        "sessions": 50,
+        "wins": 51,
+        "losses": 75,
+        "win_rate_pct": 39.8,
+        "avg_win_r": 0.931,
+        "avg_loss_r": 0.731,
+        "expectancy_r": -0.0574,
+        "total_r": -7.35,
+        "max_drawdown_r": 20.71,
+        "by_outcome": {
+          "stop": 41,
+          "timed out": 75,
+          "target": 12
+        },
+        "net": -15808.26,
+        "charges": 11541.24,
+        "gross": -4267.02
+      },
+      "design": {
+        "label": "design half",
+        "trades": 75,
+        "sessions": 29,
+        "wins": 26,
+        "losses": 47,
+        "win_rate_pct": 34.7,
+        "avg_win_r": 0.987,
+        "avg_loss_r": 0.821,
+        "expectancy_r": -0.1726,
+        "total_r": -12.95,
+        "max_drawdown_r": 16.92,
+        "by_outcome": {
+          "stop": 32,
+          "timed out": 36,
+          "target": 7
+        },
+        "net": -16949.56,
+        "charges": 6797.06,
+        "gross": -10152.5
+      },
+      "confirm": {
+        "label": "confirm half",
+        "trades": 53,
+        "sessions": 21,
+        "wins": 25,
+        "losses": 28,
+        "win_rate_pct": 47.2,
+        "avg_win_r": 0.874,
+        "avg_loss_r": 0.581,
+        "expectancy_r": 0.1055,
+        "total_r": 5.59,
+        "max_drawdown_r": 3.96,
+        "by_outcome": {
+          "stop": 9,
+          "timed out": 39,
+          "target": 5
+        },
+        "net": 1141.3,
+        "charges": 4744.18,
+        "gross": 5885.48
+      },
+      "gated_all": {
+        "label": "regime gate on",
+        "trades": 15,
+        "sessions": 6,
+        "wins": 6,
+        "losses": 9,
+        "win_rate_pct": 40.0,
+        "avg_win_r": 0.642,
+        "avg_loss_r": 0.508,
+        "expectancy_r": -0.0481,
+        "total_r": -0.72,
+        "max_drawdown_r": 2.12,
+        "by_outcome": {
+          "stop": 3,
+          "timed out": 12
+        },
+        "net": -1757.18,
+        "charges": 1334.64,
+        "gross": -422.54
+      },
+      "gated_design": {
+        "label": "gated design",
+        "trades": 0,
+        "expectancy_r": null,
+        "net": 0.0,
+        "win_rate_pct": null,
+        "total_r": 0.0
+      },
+      "gated_confirm": {
+        "label": "gated confirm",
+        "trades": 15,
+        "sessions": 6,
+        "wins": 6,
+        "losses": 9,
+        "win_rate_pct": 40.0,
+        "avg_win_r": 0.642,
+        "avg_loss_r": 0.508,
+        "expectancy_r": -0.0481,
+        "total_r": -0.72,
+        "max_drawdown_r": 2.12,
+        "by_outcome": {
+          "stop": 3,
+          "timed out": 12
+        },
+        "net": -1757.18,
+        "charges": 1334.64,
+        "gross": -422.54
+      },
+      "held_up": {
+        "survives": false,
+        "arms": [
+          {
+            "arm": "every session",
+            "design_expectancy_r": -0.1726,
+            "confirm_expectancy_r": 0.1055,
+            "design_trades": 75,
+            "confirm_trades": 53,
+            "both_halves_positive": false,
+            "enough_trades": true,
+            "net_positive_after_charges": false,
+            "survives": false
+          },
+          {
+            "arm": "regime gate on",
+            "design_expectancy_r": null,
+            "confirm_expectancy_r": -0.0481,
+            "design_trades": 0,
+            "confirm_trades": 15,
+            "both_halves_positive": false,
+            "enough_trades": false,
+            "net_positive_after_charges": false,
+            "survives": false
+          }
+        ]
+      }
+    },
+    {
+      "key": "orb_breakout",
+      "name": "Opening-range breakout",
+      "family": "trend",
+      "idea": "Buy the first 5-minute close above the first 15 minutes' high. The app's shipped setup.",
+      "all": {
+        "label": "every session",
+        "trades": 177,
+        "sessions": 59,
+        "wins": 73,
+        "losses": 102,
+        "win_rate_pct": 41.2,
+        "avg_win_r": 0.985,
+        "avg_loss_r": 0.809,
+        "expectancy_r": -0.0599,
+        "total_r": -10.6,
+        "max_drawdown_r": 23.72,
+        "by_outcome": {
+          "stop": 67,
+          "timed out": 92,
+          "target": 18
+        },
+        "net": -17899.92,
+        "charges": 16016.66,
+        "gross": -1883.26
+      },
+      "design": {
+        "label": "design half",
+        "trades": 105,
+        "sessions": 35,
+        "wins": 36,
+        "losses": 69,
+        "win_rate_pct": 34.3,
+        "avg_win_r": 1.053,
+        "avg_loss_r": 0.839,
+        "expectancy_r": -0.19,
+        "total_r": -19.95,
+        "max_drawdown_r": 23.72,
+        "by_outcome": {
+          "stop": 48,
+          "timed out": 46,
+          "target": 11
+        },
+        "net": -27341.93,
+        "charges": 9517.41,
+        "gross": -17824.52
+      },
+      "confirm": {
+        "label": "confirm half",
+        "trades": 72,
+        "sessions": 24,
+        "wins": 37,
+        "losses": 33,
+        "win_rate_pct": 51.4,
+        "avg_win_r": 0.918,
+        "avg_loss_r": 0.746,
+        "expectancy_r": 0.1298,
+        "total_r": 9.34,
+        "max_drawdown_r": 5.06,
+        "by_outcome": {
+          "stop": 19,
+          "target": 7,
+          "timed out": 46
+        },
+        "net": 9442.01,
+        "charges": 6499.25,
+        "gross": 15941.26
+      },
+      "gated_all": {
+        "label": "regime gate on",
+        "trades": 21,
+        "sessions": 7,
+        "wins": 11,
+        "losses": 9,
+        "win_rate_pct": 52.4,
+        "avg_win_r": 0.81,
+        "avg_loss_r": 0.719,
+        "expectancy_r": 0.1165,
+        "total_r": 2.45,
+        "max_drawdown_r": 3.98,
+        "by_outcome": {
+          "timed out": 13,
+          "stop": 6,
+          "target": 2
+        },
+        "net": 147.71,
+        "charges": 1890.89,
+        "gross": 2038.6
+      },
+      "gated_design": {
+        "label": "gated design",
+        "trades": 0,
+        "expectancy_r": null,
+        "net": 0.0,
+        "win_rate_pct": null,
+        "total_r": 0.0
+      },
+      "gated_confirm": {
+        "label": "gated confirm",
+        "trades": 21,
+        "sessions": 7,
+        "wins": 11,
+        "losses": 9,
+        "win_rate_pct": 52.4,
+        "avg_win_r": 0.81,
+        "avg_loss_r": 0.719,
+        "expectancy_r": 0.1165,
+        "total_r": 2.45,
+        "max_drawdown_r": 3.98,
+        "by_outcome": {
+          "timed out": 13,
+          "stop": 6,
+          "target": 2
+        },
+        "net": 147.71,
+        "charges": 1890.89,
+        "gross": 2038.6
+      },
+      "held_up": {
+        "survives": false,
+        "arms": [
+          {
+            "arm": "every session",
+            "design_expectancy_r": -0.19,
+            "confirm_expectancy_r": 0.1298,
+            "design_trades": 105,
+            "confirm_trades": 72,
+            "both_halves_positive": false,
+            "enough_trades": true,
+            "net_positive_after_charges": false,
+            "survives": false
+          },
+          {
+            "arm": "regime gate on",
+            "design_expectancy_r": null,
+            "confirm_expectancy_r": 0.1165,
+            "design_trades": 0,
+            "confirm_trades": 21,
+            "both_halves_positive": false,
+            "enough_trades": false,
+            "net_positive_after_charges": true,
+            "survives": false
+          }
+        ]
+      }
+    },
+    {
+      "key": "pullback_to_ema",
+      "name": "Pullback to the 20-bar EMA",
+      "family": "trend",
+      "idea": "In a session holding above VWAP, buy the first bounce off the 20-bar EMA.",
+      "all": {
+        "label": "every session",
+        "trades": 177,
+        "sessions": 59,
+        "wins": 55,
+        "losses": 122,
+        "win_rate_pct": 31.1,
+        "avg_win_r": 1.881,
+        "avg_loss_r": 0.99,
+        "expectancy_r": -0.0981,
+        "total_r": -17.37,
+        "max_drawdown_r": 44.96,
+        "by_outcome": {
+          "stop": 120,
+          "target": 48,
+          "timed out": 9
+        },
+        "net": -21586.4,
+        "charges": 16080.37,
+        "gross": -5506.03
+      },
+      "design": {
+        "label": "design half",
+        "trades": 105,
+        "sessions": 35,
+        "wins": 34,
+        "losses": 71,
+        "win_rate_pct": 32.4,
+        "avg_win_r": 1.855,
+        "avg_loss_r": 0.983,
+        "expectancy_r": -0.0641,
+        "total_r": -6.73,
+        "max_drawdown_r": 25.73,
+        "by_outcome": {
+          "stop": 69,
+          "target": 29,
+          "timed out": 7
+        },
+        "net": -12296.33,
+        "charges": 9542.85,
+        "gross": -2753.48
+      },
+      "confirm": {
+        "label": "confirm half",
+        "trades": 72,
+        "sessions": 24,
+        "wins": 21,
+        "losses": 51,
+        "win_rate_pct": 29.2,
+        "avg_win_r": 1.922,
+        "avg_loss_r": 1.0,
+        "expectancy_r": -0.1477,
+        "total_r": -10.64,
+        "max_drawdown_r": 21.23,
+        "by_outcome": {
+          "target": 19,
+          "stop": 51,
+          "timed out": 2
+        },
+        "net": -9290.07,
+        "charges": 6537.52,
+        "gross": -2752.55
+      },
+      "gated_all": {
+        "label": "regime gate on",
+        "trades": 21,
+        "sessions": 7,
+        "wins": 6,
+        "losses": 15,
+        "win_rate_pct": 28.6,
+        "avg_win_r": 1.932,
+        "avg_loss_r": 1.0,
+        "expectancy_r": -0.1622,
+        "total_r": -3.41,
+        "max_drawdown_r": 10.41,
+        "by_outcome": {
+          "stop": 15,
+          "target": 5,
+          "timed out": 1
+        },
+        "net": -3745.27,
+        "charges": 1905.83,
+        "gross": -1839.44
+      },
+      "gated_design": {
+        "label": "gated design",
+        "trades": 0,
+        "expectancy_r": null,
+        "net": 0.0,
+        "win_rate_pct": null,
+        "total_r": 0.0
+      },
+      "gated_confirm": {
+        "label": "gated confirm",
+        "trades": 21,
+        "sessions": 7,
+        "wins": 6,
+        "losses": 15,
+        "win_rate_pct": 28.6,
+        "avg_win_r": 1.932,
+        "avg_loss_r": 1.0,
+        "expectancy_r": -0.1622,
+        "total_r": -3.41,
+        "max_drawdown_r": 10.41,
+        "by_outcome": {
+          "stop": 15,
+          "target": 5,
+          "timed out": 1
+        },
+        "net": -3745.27,
+        "charges": 1905.83,
+        "gross": -1839.44
+      },
+      "held_up": {
+        "survives": false,
+        "arms": [
+          {
+            "arm": "every session",
+            "design_expectancy_r": -0.0641,
+            "confirm_expectancy_r": -0.1477,
+            "design_trades": 105,
+            "confirm_trades": 72,
+            "both_halves_positive": false,
+            "enough_trades": true,
+            "net_positive_after_charges": false,
+            "survives": false
+          },
+          {
+            "arm": "regime gate on",
+            "design_expectancy_r": null,
+            "confirm_expectancy_r": -0.1622,
+            "design_trades": 0,
+            "confirm_trades": 21,
+            "both_halves_positive": false,
+            "enough_trades": false,
+            "net_positive_after_charges": false,
+            "survives": false
+          }
+        ]
+      }
+    },
+    {
+      "key": "first_hour_low_reclaim",
+      "name": "First-hour low reclaim",
+      "family": "mean reversion",
+      "idea": "After the first hour, buy the first close back above that hour's low.",
+      "all": {
+        "label": "every session",
+        "trades": 175,
+        "sessions": 59,
+        "wins": 48,
+        "losses": 127,
+        "win_rate_pct": 27.4,
+        "avg_win_r": 1.807,
+        "avg_loss_r": 0.985,
+        "expectancy_r": -0.2195,
+        "total_r": -38.41,
+        "max_drawdown_r": 41.39,
+        "by_outcome": {
+          "stop": 124,
+          "target": 42,
+          "timed out": 9
+        },
+        "net": -24891.09,
+        "charges": 15895.32,
+        "gross": -8995.77
+      },
+      "design": {
+        "label": "design half",
+        "trades": 105,
+        "sessions": 35,
+        "wins": 26,
+        "losses": 79,
+        "win_rate_pct": 24.8,
+        "avg_win_r": 1.935,
+        "avg_loss_r": 0.999,
+        "expectancy_r": -0.2726,
+        "total_r": -28.62,
+        "max_drawdown_r": 30.62,
+        "by_outcome": {
+          "stop": 78,
+          "target": 25,
+          "timed out": 2
+        },
+        "net": -16476.43,
+        "charges": 9539.18,
+        "gross": -6937.25
+      },
+      "confirm": {
+        "label": "confirm half",
+        "trades": 70,
+        "sessions": 24,
+        "wins": 22,
+        "losses": 48,
+        "win_rate_pct": 31.4,
+        "avg_win_r": 1.656,
+        "avg_loss_r": 0.963,
+        "expectancy_r": -0.1399,
+        "total_r": -9.79,
+        "max_drawdown_r": 12.77,
+        "by_outcome": {
+          "stop": 46,
+          "timed out": 7,
+          "target": 17
+        },
+        "net": -8414.66,
+        "charges": 6356.14,
+        "gross": -2058.52
+      },
+      "gated_all": {
+        "label": "regime gate on",
+        "trades": 21,
+        "sessions": 7,
+        "wins": 7,
+        "losses": 14,
+        "win_rate_pct": 33.3,
+        "avg_win_r": 1.854,
+        "avg_loss_r": 1.0,
+        "expectancy_r": -0.0487,
+        "total_r": -1.02,
+        "max_drawdown_r": 9.0,
+        "by_outcome": {
+          "stop": 14,
+          "target": 6,
+          "timed out": 1
+        },
+        "net": -350.81,
+        "charges": 1904.2,
+        "gross": 1553.39
+      },
+      "gated_design": {
+        "label": "gated design",
+        "trades": 0,
+        "expectancy_r": null,
+        "net": 0.0,
+        "win_rate_pct": null,
+        "total_r": 0.0
+      },
+      "gated_confirm": {
+        "label": "gated confirm",
+        "trades": 21,
+        "sessions": 7,
+        "wins": 7,
+        "losses": 14,
+        "win_rate_pct": 33.3,
+        "avg_win_r": 1.854,
+        "avg_loss_r": 1.0,
+        "expectancy_r": -0.0487,
+        "total_r": -1.02,
+        "max_drawdown_r": 9.0,
+        "by_outcome": {
+          "stop": 14,
+          "target": 6,
+          "timed out": 1
+        },
+        "net": -350.81,
+        "charges": 1904.2,
+        "gross": 1553.39
+      },
+      "held_up": {
+        "survives": false,
+        "arms": [
+          {
+            "arm": "every session",
+            "design_expectancy_r": -0.2726,
+            "confirm_expectancy_r": -0.1399,
+            "design_trades": 105,
+            "confirm_trades": 70,
+            "both_halves_positive": false,
+            "enough_trades": true,
+            "net_positive_after_charges": false,
+            "survives": false
+          },
+          {
+            "arm": "regime gate on",
+            "design_expectancy_r": null,
+            "confirm_expectancy_r": -0.0487,
+            "design_trades": 0,
+            "confirm_trades": 21,
+            "both_halves_positive": false,
+            "enough_trades": false,
+            "net_positive_after_charges": false,
+            "survives": false
+          }
+        ]
+      }
+    }
+  ],
+  "survivors": [
+    "or_low_reclaim"
+  ],
+  "verdict": "7 setups tested over the same sessions, 14 comparisons in all. Best by raw expectancy: Opening-range low reclaim at +0.1423R a trade over 176 trades. 1 survived the split (positive in both halves, 20+ trades each, net of charges): Opening-range low reclaim. That is a reason to paper-trade it forward and watch, not a reason to believe it: with 14 comparisons, one survivor is roughly what chance alone would produce.",
+  "method": [
+    "All 7 setups were written down before anything was run; none was added after seeing a result.",
+    "The older 60% of sessions are the design half, the newer 40% the confirm half. A setup counts only if it is positive in BOTH.",
+    "Every setup is reported, including the ones that lose.",
+    "14 comparisons were made (7 setups x gate on/off), so the best result is partly the best of 14 tries.",
+    "Every trade pays the same estimated NSE intraday charges the paper broker applies."
+  ],
+  "limits": [
+    "60 days is a small window and these are optimistic fills: entry at the bar close, stop and target AT the level, no slippage or partial fills.",
+    "The universe is today's NIFTY list applied to a past window (survivorship).",
+    "Surviving one split is weak evidence. The honest ceiling on anything here is 'worth paper-trading forward', never 'trade this'."
+  ]
+}

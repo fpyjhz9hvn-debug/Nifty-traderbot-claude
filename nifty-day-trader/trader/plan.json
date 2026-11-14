@@ -1,0 +1,29 @@
+{
+  "symbol": "INFY.NS",
+  "display": "INFY",
+  "name": "Infosys",
+  "side": "long",
+  "setup": "or_low_reclaim",
+  "date": "2026-11-13",
+  "entry": 1140.4,
+  "entry_time": "12:55",
+  "entry_bar": 44,
+  "stop": 1137.3,
+  "stop_rule": "swing-low",
+  "stop_why": "the low since the break, 1137.30 (the level the reclaim fails at)",
+  "target": 1146.6,
+  "target_rule": "2R",
+  "target_r": 2.0,
+  "target_why": "2R (2 times the 3.10 risk a share)",
+  "risk_per_share": 3.1,
+  "risk_pct": 0.27,
+  "reward_risk": 2.0,
+  "flat_by": "15:20",
+  "opening_range": {
+    "high": 1145.6,
+    "low": 1140.3
+  },
+  "min_reward_risk": 1.0,
+  "as_of": "2026-11-13 22:48",
+  "note": "A stop is a plan, not a guarantee: in a fast market or across a gap it can fill well past its price. Flat by 15:20 either way, no overnight hold."
+}

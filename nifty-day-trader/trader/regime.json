@@ -1,0 +1,33 @@
+{
+  "as_of": "2026-11-13 20:20",
+  "index": "NIFTY 50",
+  "last_close": 25299.35,
+  "last_session": "2026-11-12",
+  "ema21": 23831.31,
+  "sma50": 23310.51,
+  "above_ema21": true,
+  "above_sma50": true,
+  "distribution": {
+    "d5": 0,
+    "d15": 0,
+    "d25": 0,
+    "active": []
+  },
+  "risk_level": "NORMAL",
+  "participation": {
+    "counted": 51,
+    "above_ma20_pct": 90.2,
+    "above_ma50_pct": 80.4,
+    "up_5d_pct": 68.6,
+    "uptrend_pct": 80.4
+  },
+  "regime": "Broadening",
+  "bias": "Broad participation",
+  "exposure_ceiling_pct": 90,
+  "recommendation": "NEW_ENTRY_ALLOWED",
+  "allows_new_entries": true,
+  "adjustments": [],
+  "rationale": "Broadening regime: 80% of the list is above its 50-day average and 90% above its 20-day. No active distribution days, so market risk reads NORMAL. New long entries are allowed.",
+  "source": "Distribution days and the 21 EMA / 50 SMA from the NIFTY 50 index's own daily bars; participation from the 51 names in the nifty50 list.",
+  "note": "This describes what the market has already done. It is not a forecast. The point of the gate is that a long-only breakout system loses worst when every breakout is failing, and that is visible before you take the trade."
+}

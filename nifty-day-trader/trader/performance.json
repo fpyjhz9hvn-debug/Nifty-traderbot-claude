@@ -1,0 +1,58 @@
+{
+  "as_of": "2026-11-13 22:47",
+  "round_trips": 1,
+  "wins": 0,
+  "losses": 1,
+  "scratches": 0,
+  "win_rate_pct": 0.0,
+  "avg_win": 0.0,
+  "avg_loss": 725.27,
+  "payoff_ratio": null,
+  "expectancy": -725.27,
+  "expectancy_r": -1.0,
+  "profit_factor": null,
+  "gross_profit": 0,
+  "gross_loss": 725.27,
+  "charges": 90.89,
+  "charges_share_pct": null,
+  "net": -725.27,
+  "net_pct_of_opening": -0.15,
+  "by_exit": {
+    "stop": {
+      "count": 1,
+      "net": -725.27
+    }
+  },
+  "drawdown": {
+    "max_drawdown": 725.27,
+    "max_drawdown_pct": 0.15,
+    "at": "2026-11-13 14:26"
+  },
+  "kelly_pct": null,
+  "half_kelly_pct": null,
+  "kelly_ready": false,
+  "sample_is_meaningful": false,
+  "behaviour": [],
+  "trades": [
+    {
+      "symbol": "INFY.NS",
+      "display": "INFY",
+      "qty": 109,
+      "entry": 1142.2,
+      "exit": 1136.38,
+      "entry_at": "2026-11-13 13:27",
+      "exit_at": "2026-11-13 14:25",
+      "reason": "stop-loss hit on the 14:25 bar",
+      "gross": -634.38,
+      "charges": 90.89,
+      "net": -725.27,
+      "planned_stop": null,
+      "planned_risk": null
+    }
+  ],
+  "verdict": "Negative expectancy: -\u20b9725.27 a trade (-1.000R per unit of risk). On this record the strategy loses money, and sizing it up would only lose faster.",
+  "caveats": [
+    "Only 1 closed round trip(s). Under 20 trades this is noise, not a track record: a run of luck either way swamps the signal."
+  ],
+  "note": "Expectancy is the number that decides whether a strategy makes money: win rate x average win minus loss rate x average loss, net of charges. Sizing changes how fast an edge compounds, never whether there is one."
+}
